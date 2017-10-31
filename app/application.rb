@@ -23,7 +23,7 @@ class Application
         resp.write "#{cart_item}\n"
       end
     end
-      
+
 
     resp.finish
   end
