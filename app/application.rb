@@ -26,7 +26,7 @@ class Application
 
     elsif req.path.match(/add/)
       added_item = resp.get(item)
-      if @@items.include(added_item)
+      if @@items.include?(added_item)
         @@cart << added_item
         resp.write "added #{added_item}"
       else
